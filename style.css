@@ -258,3 +258,144 @@ Section Defaults
     color:#4b5563;
 
 }
+/* ===========================================
+Grey Section
+=========================================== */
+
+.grey{
+
+    background:#f8fafc;
+
+}
+
+/* ===========================================
+Cards
+=========================================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:70px;
+
+}
+
+.card{
+
+    background:#ffffff;
+
+    border:1px solid #ececec;
+
+    border-radius:22px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    transition:all .35s ease;
+
+    cursor:pointer;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.04);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.10);
+
+    border-color:#dbeafe;
+
+}
+
+.card{
+
+    font-size:42px;
+
+}
+
+.card h3{
+
+    margin-top:18px;
+
+    font-size:22px;
+
+    color:#111827;
+
+    font-weight:600;
+
+}
+
+.card p{
+
+    margin-top:12px;
+
+    font-size:16px;
+
+    color:#6b7280;
+
+}
+
+/* ===========================================
+Footer
+=========================================== */
+
+footer{
+
+    padding:70px 20px;
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    font-size:16px;
+
+    line-height:2;
+
+}
+
+footer strong{
+
+    font-size:20px;
+
+}
+
+/* ===========================================
+Smooth Fade Animation
+=========================================== */
+
+.hero,
+.section,
+.card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
