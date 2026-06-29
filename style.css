@@ -1,401 +1,115 @@
-/* ===========================================
-   ONE LAST WORK PAPER
-   Part 1 - Global Styles
-=========================================== */
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
 
-    font-family:'Inter',sans-serif;
+font-family:'Inter',sans-serif;
 
-    background:#ffffff;
+background:#ffffff;
 
-    color:#1f2937;
-
-    line-height:1.8;
-
-    -webkit-font-smoothing:antialiased;
+color:#111111;
 
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
-}
+.page{
 
-img{
-    max-width:100%;
-}
+height:100vh;
 
-/* ===========================================
-Container
-=========================================== */
+display:flex;
 
-.container{
+justify-content:center;
 
-    width:min(1100px,90%);
-    margin:auto;
+align-items:center;
+
+text-align:center;
+
+padding:40px;
 
 }
 
-/* ===========================================
-Header
-=========================================== */
+.content{
 
-header{
+max-width:700px;
 
-    position:fixed;
-
-    top:0;
-
-    left:0;
-
-    width:100%;
-
-    background:rgba(255,255,255,.88);
-
-    backdrop-filter:blur(18px);
-
-    border-bottom:1px solid #ececec;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:22px 7%;
-
-    z-index:1000;
+animation:fade 1s ease;
 
 }
 
-.logo{
+.small{
 
-    font-size:22px;
+font-size:15px;
 
-    font-weight:700;
+letter-spacing:5px;
 
-    letter-spacing:-0.5px;
+text-transform:uppercase;
 
-}
+color:#999;
 
-nav{
-
-    display:flex;
-
-    gap:32px;
+margin-bottom:25px;
 
 }
 
-nav a{
+h1{
 
-    font-size:15px;
+font-size:82px;
 
-    font-weight:500;
+font-weight:600;
 
-    color:#4b5563;
+letter-spacing:-4px;
 
-    transition:.25s;
-
-}
-
-nav a:hover{
-
-    color:#111827;
+margin-bottom:60px;
 
 }
 
-/* ===========================================
-Hero Section
-=========================================== */
+.button{
 
-.hero{
+display:inline-block;
 
-    min-height:100vh;
+padding:18px 42px;
 
-    display:flex;
+background:#111;
 
-    align-items:center;
+color:white;
 
-    justify-content:center;
+border-radius:999px;
 
-    text-align:center;
+font-size:17px;
 
-    padding:140px 20px 100px;
+transition:.3s;
 
-}
-
-.hero-content{
-
-    max-width:850px;
+text-decoration:none;
 
 }
 
-.eyebrow{
+.button:hover{
 
-    color:#2563eb;
+transform:translateY(-3px);
 
-    font-weight:600;
+padding-left:48px;
 
-    letter-spacing:2px;
-
-    text-transform:uppercase;
-
-    margin-bottom:25px;
-
-    font-size:13px;
+padding-right:48px;
 
 }
 
-.hero h1{
+@keyframes fade{
 
-    font-size:68px;
+from{
 
-    line-height:1.05;
+opacity:0;
 
-    font-weight:700;
-
-    letter-spacing:-3px;
-
-    margin-bottom:30px;
+transform:translateY(20px);
 
 }
 
-.hero h1 span{
+to{
 
-    color:#6b7280;
+opacity:1;
 
-    font-weight:400;
-
-}
-
-.subtitle{
-
-    font-size:22px;
-
-    color:#6b7280;
-
-    max-width:760px;
-
-    margin:auto;
-
-    margin-bottom:45px;
+transform:translateY(0);
 
 }
-
-/* ===========================================
-Button
-=========================================== */
-
-.btn{
-
-    display:inline-block;
-
-    background:#111827;
-
-    color:white;
-
-    padding:18px 34px;
-
-    border-radius:999px;
-
-    font-weight:600;
-
-    transition:.35s;
-
-}
-
-.btn:hover{
-
-    transform:translateY(-4px);
-
-    box-shadow:0 20px 40px rgba(0,0,0,.12);
-
-}
-
-/* ===========================================
-Section Defaults
-=========================================== */
-
-.section{
-
-    padding:120px 0;
-
-}
-
-.section h2{
-
-    font-size:44px;
-
-    text-align:center;
-
-    margin-bottom:30px;
-
-    letter-spacing:-1px;
-
-}
-
-.section p{
-
-    max-width:760px;
-
-    margin:22px auto;
-
-    text-align:center;
-
-    font-size:19px;
-
-    color:#4b5563;
-
-}
-/* ===========================================
-Grey Section
-=========================================== */
-
-.grey{
-
-    background:#f8fafc;
-
-}
-
-/* ===========================================
-Cards
-=========================================== */
-
-.cards{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-    gap:30px;
-
-    margin-top:70px;
-
-}
-
-.card{
-
-    background:#ffffff;
-
-    border:1px solid #ececec;
-
-    border-radius:22px;
-
-    padding:40px 30px;
-
-    text-align:center;
-
-    transition:all .35s ease;
-
-    cursor:pointer;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.04);
-
-}
-
-.card:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:0 25px 60px rgba(0,0,0,.10);
-
-    border-color:#dbeafe;
-
-}
-
-.card{
-
-    font-size:42px;
-
-}
-
-.card h3{
-
-    margin-top:18px;
-
-    font-size:22px;
-
-    color:#111827;
-
-    font-weight:600;
-
-}
-
-.card p{
-
-    margin-top:12px;
-
-    font-size:16px;
-
-    color:#6b7280;
-
-}
-
-/* ===========================================
-Footer
-=========================================== */
-
-footer{
-
-    padding:70px 20px;
-
-    background:#111827;
-
-    color:white;
-
-    text-align:center;
-
-    font-size:16px;
-
-    line-height:2;
-
-}
-
-footer strong{
-
-    font-size:20px;
-
-}
-
-/* ===========================================
-Smooth Fade Animation
-=========================================== */
-
-.hero,
-.section,
-.card{
-
-    animation:fadeUp .8s ease;
-
-}
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(25px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
 
 }
