@@ -1,1 +1,260 @@
-body{font-family:Arial,sans-serif;margin:0;background:#0f172a;color:#fff}header,.hero,footer{padding:40px;text-align:center}nav{text-align:center;padding:15px;background:#1e293b}a{color:#7dd3fc;text-decoration:none;margin:0 10px}.hero{max-width:900px;margin:auto}
+/* ===========================================
+   ONE LAST WORK PAPER
+   Part 1 - Global Styles
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:#ffffff;
+
+    color:#1f2937;
+
+    line-height:1.8;
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+}
+
+/* ===========================================
+Container
+=========================================== */
+
+.container{
+
+    width:min(1100px,90%);
+    margin:auto;
+
+}
+
+/* ===========================================
+Header
+=========================================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:rgba(255,255,255,.88);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid #ececec;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 7%;
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:-0.5px;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:32px;
+
+}
+
+nav a{
+
+    font-size:15px;
+
+    font-weight:500;
+
+    color:#4b5563;
+
+    transition:.25s;
+
+}
+
+nav a:hover{
+
+    color:#111827;
+
+}
+
+/* ===========================================
+Hero Section
+=========================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:140px 20px 100px;
+
+}
+
+.hero-content{
+
+    max-width:850px;
+
+}
+
+.eyebrow{
+
+    color:#2563eb;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:25px;
+
+    font-size:13px;
+
+}
+
+.hero h1{
+
+    font-size:68px;
+
+    line-height:1.05;
+
+    font-weight:700;
+
+    letter-spacing:-3px;
+
+    margin-bottom:30px;
+
+}
+
+.hero h1 span{
+
+    color:#6b7280;
+
+    font-weight:400;
+
+}
+
+.subtitle{
+
+    font-size:22px;
+
+    color:#6b7280;
+
+    max-width:760px;
+
+    margin:auto;
+
+    margin-bottom:45px;
+
+}
+
+/* ===========================================
+Button
+=========================================== */
+
+.btn{
+
+    display:inline-block;
+
+    background:#111827;
+
+    color:white;
+
+    padding:18px 34px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+/* ===========================================
+Section Defaults
+=========================================== */
+
+.section{
+
+    padding:120px 0;
+
+}
+
+.section h2{
+
+    font-size:44px;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    letter-spacing:-1px;
+
+}
+
+.section p{
+
+    max-width:760px;
+
+    margin:22px auto;
+
+    text-align:center;
+
+    font-size:19px;
+
+    color:#4b5563;
+
+}
