@@ -1,1 +1,5 @@
-console.log('One Last Work Paper loaded');
+setTimeout(() => {
+
+document.querySelector("h1").style.opacity = "1";
+
+},300);
